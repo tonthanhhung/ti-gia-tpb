@@ -22,5 +22,15 @@ request({
     else {
         const tigiaEuro = JSON.parse(body).rate_currency.find(({ ten }) => ten === "Euro");
         console.log(tigiaEuro.chuyen)
+        const exec = require('child_process').exec;
+        const child = exec(`echo "Tỉ giá 💶: ${tigiaEuro.chuyen}" |clip.exe`,
+            (error, stdout, stderr) => {
+                if (error !== null) {
+                    console.log(`stdout: ${stdout}`);
+                    console.log(`stderr: ${stderr}`);
+                    console.log(`exec error: ${error}`);
+                }
+            });
+
     }
 });
