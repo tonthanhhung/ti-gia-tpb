@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 
 const request = require('request');
 const cheerio = require('cheerio');
@@ -8,7 +9,7 @@ const today = dayjs().format('YYYYMMDD');
 const url = `https://tpb.vn/CMCWPCoreAPI/api/public-service/get-currency-rate?filename=${today}`;
 const username = "wpstpb2018";
 const password = "WPStpb20181212";
-const auth = "Basic " + new Buffer(`${username}:${password}`).toString("base64");
+const auth = "Basic " + Buffer.from(`${username}:${password}`).toString("base64");
 
 request({
     url,

@@ -13,6 +13,8 @@
     "cheerio": "^1.0.0-rc.3",
     "dayjs": "^1.8.15",
     "fs": "^0.0.1-security",
-    "request": "^2.88.0"
+    "fs-extra": "^8.1.0",
+    "request": "^2.88.0",
+    "yarn": "^1.17.3"
   }
 }
