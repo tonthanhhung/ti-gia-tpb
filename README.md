@@ -1,5 +1,5 @@
 # ti-gia-tpb
-simple crawler to get forex from TBP
+Simple crawler to get forex(Euro) from TPB
 
 ## Usage: 
 ```
